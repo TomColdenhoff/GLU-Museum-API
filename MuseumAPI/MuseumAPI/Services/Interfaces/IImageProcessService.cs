@@ -1,10 +1,9 @@
-using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuseumAPI.Models;
 
-namespace MuseumAPI.Services
+namespace MuseumAPI.Services.Interfaces
 {
 	public interface IImageProcessService
 	{

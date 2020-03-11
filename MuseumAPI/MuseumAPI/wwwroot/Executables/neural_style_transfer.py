@@ -6,8 +6,11 @@ import argparse
 import imutils
 import time
 import cv2
+import os
 
 # construct the argument parser and parse the arguments
+import numpy as np
+
 ap = argparse.ArgumentParser()
 ap.add_argument("-m", "--model", required=True,
 	help="neural style transfer model")
@@ -47,7 +50,9 @@ output = output.transpose(1, 2, 0)
 print("[INFO] neural style transfer took {:.4f} seconds".format(
 	end - start))
 
-# show the images
-cv2.imshow("Input", image)
-cv2.imshow("Output", output)
-cv2.waitKey(0)
+# save the images
+file_name, file_extension = os.path.splitext(args["image"])
+print(output.dtype)
+output = 255.0 * output
+cv2.imwrite("../Images/processedImage.PNG", output)
+print("[INFO] saved the image as processedImage.PNG")

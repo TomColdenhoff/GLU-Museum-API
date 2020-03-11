@@ -3,9 +3,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MuseumAPI.Models;
 using MuseumAPI.Services;
+using MuseumAPI.Services.Interfaces;
 
 namespace MuseumAPI.Controllers
 {
+	[ApiController]
 	[Route("api/[controller]")]
 	public class ImageController : ControllerBase
 	{
@@ -21,8 +23,8 @@ namespace MuseumAPI.Controllers
 			if (file == null)
 				return BadRequest();
 			
-			var image = await _imageProcessService.ProcessImage(artStyle, file);
-			return Ok();
+			var processedImage = await _imageProcessService.ProcessImage(artStyle, file);
+			return processedImage;
 		}
 	}
 }

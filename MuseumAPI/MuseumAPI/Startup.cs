@@ -11,6 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using MuseumAPI.Services;
+using MuseumAPI.Services.Interfaces;
 
 namespace MuseumAPI
 {
@@ -29,6 +30,7 @@ namespace MuseumAPI
 			services.AddControllers().AddNewtonsoftJson();
 
 			services.AddScoped<IImageProcessService, ImageProcessService>();
+			services.AddScoped<IEmailService, EmailService>();
 		}
 
 		// This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

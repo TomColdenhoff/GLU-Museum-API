@@ -2,7 +2,14 @@ namespace MuseumAPI.Models
 {
 	public enum ArtStyle
 	{
-		VanGogh = 0,
+		Composition = 0,
+		LaMuse,
+		StarryNight,
+		TheWave,
+		Candy,
+		Feathers,
 		Mosaic,
+		TheScream,
+		Udnie
 	}
 }
