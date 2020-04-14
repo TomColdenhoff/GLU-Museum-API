@@ -13,7 +13,8 @@
       "netcoreapp3.1"
     ],
     "sources": {
-      "https://api.nuget.org/v3/index.json": {}
+      "https://api.nuget.org/v3/index.json": {},
+      "https://pkgs.dev.azure.com/re-software/TenderFlow/_packaging/TenderFlow/nuget/v3/index.json": {}
     },
     "frameworks": {
       "netcoreapp3.1": {
