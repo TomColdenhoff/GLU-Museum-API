@@ -223,6 +223,7 @@
   },
   "packageFolders": {
     "/Users/tomcoldenhoff/.nuget/packages/": {},
+    "clear": {},
     "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
@@ -235,16 +236,18 @@
       "outputPath": "/Users/tomcoldenhoff/Documents/Grafisch Lyceum Utrecht/Periode 15/Keuzedeel/Source/GLU-Museum-API/MuseumAPI/MuseumAPI/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "clear",
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/tomcoldenhoff/.nuget/NuGet/NuGet.Config"
+        "/Users/tomcoldenhoff/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/re-software/TenderFlow/_packaging/TenderFlow/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {

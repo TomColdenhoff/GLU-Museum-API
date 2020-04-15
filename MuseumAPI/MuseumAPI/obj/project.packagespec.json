@@ -7,6 +7,7 @@
     "outputPath": "/Users/tomcoldenhoff/Documents/Grafisch Lyceum Utrecht/Periode 15/Keuzedeel/Source/GLU-Museum-API/MuseumAPI/MuseumAPI/obj/",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
+      "clear",
       "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
